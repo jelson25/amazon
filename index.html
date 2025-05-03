@@ -18,6 +18,7 @@
       color: white;
       padding: 20px 25px;
       flex-wrap: wrap;
+      
     }
 
     .nav-left {
@@ -48,6 +49,7 @@
       max-width: 600px;
       margin: 10px 20px;
       min-width: 300px;
+      
     }
 
     .search-bar select {
@@ -99,16 +101,18 @@
       background-color: #232f3e;
       color: white;
       display: flex;
-      padding: 10px;
+      height: max-content;
       gap: 15px;
       font-size: 14px;
       overflow-x: auto;
     }
 
     .subnav a {
+      margin-left: 3px ;
       color: white;
       text-decoration: none;
       white-space: nowrap;
+      margin-bottom: 4px;
     }
     .dual-slideshow {
         display: flex;
@@ -170,7 +174,7 @@
 .recommendation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
@@ -251,7 +255,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f3f3f3;
   margin: 0;
-  padding: 20px;
+  
 }
 
 .offers-grid {
@@ -306,11 +310,36 @@ a {
 a:hover {
   text-decoration: underline;
 }
+img{
+    height: auto;
+}
+.bot , .bot a{
+    width: 100%;
+    height:30px;
+    text-align: center;
+    background-color: #231F3E;
+    color: white;
+}
+.table{
+    height: auto;
+    background-color: #232F3E;
+    color: white;
+}
+.table td li a{
+    color: white;
+}
+.t1 td li a, .t1 ul{
+    color: white;
+    list-style-type: none;
+}
+.t1{
+    background-color: black;
 }
 
   </style>
 </head>
 <body>
+    <div id="top">
   <header class="navbar">
     <div class="nav-left">
       <div class="logo">amazon<span>.in</span></div>
@@ -343,9 +372,9 @@ a:hover {
       </div>
     </div>
   </header>
-
+</div>
   <nav class="subnav">
-    <span>☰ All</span>
+    <a href="#">☰ All </a>
     <a href="#">Keep Shopping for</a>
     <a href="#">Buy Again</a>
     <a href="#">AmazonBasics</a>
@@ -373,7 +402,7 @@ a:hover {
     
     <div class="recommendation-grid">
       <div class="card">
-        <h3>Pick up where you left off</h3>
+        <h3>Pick up where you left off</h3> <br> 
         <div class="product-list">
           <img src="product1.jpg" alt="">
           <img src="product2.jpg" alt="">
@@ -411,7 +440,7 @@ a:hover {
       </div>
   
       <div class="card">
-        <h3>Keep shopping for</h3>
+        <h3>Keep shopping for</h3> <br>
         <div class="shopping-list">
           <div class="item">
             <img src="white-shorts.jpg" alt="">
@@ -439,7 +468,7 @@ a:hover {
         <img src="fridge.jpg" alt="">
         <img class="promo" src="samsung.jpg" alt="Samsung Promo">
       </div>
-    </div>
+    </div> <br>
     <div class="offers-grid">
       <!-- Card 1 -->
       <div class="card">
@@ -520,7 +549,103 @@ a:hover {
         <a href="#">See all offers</a>
       </div>
     </div>
-  </main>
+  </main> <br>
+  <footer>
 
+<div class="table">
+    <div class="bot">
+        <a href="#top"><h2>Go to top</h2></a>
+      </div>
+    <table cellpadding="50">
+        <tr>
+            <td>
+            <ul style="list-style-type: none;">
+                <li><h3>Get to know us</h3></li>
+                <li><a href="#">About amazon</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press release</a></li>
+                <li><a href="#">Amazon Science</a></li>
+            </ul></td>
+            <td>
+            <ul style="list-style-type: none;">
+                <li><h3>Connect with us</h3></li>
+                <li><a href="#">Facebook</a> </li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                
+            </ul></td>
+            <td>
+            <ul style="list-style-type: none;">
+                <li><h3>Make money with us</h3></li>
+                <li><a href="#">Sell on amazon</a></li>
+                <li><a href="#">Sell under amazon accelator</a></li>
+                <li><a href="#">Protect and build your brand</a></li>
+                <li><a href="#">Amazon global selling</a></li>
+                <li><a href="#">Supply to amazon</a></li>
+                <li><a href="#">Become an affliate</a></li>
+                <li><a href="#">Fulfillment by amazon </a></li>
+                <li><a href="#">Advertise your products</a></li>
+                <li><a href="#">Amazon pay on merchant</a></li>
+            </ul></td>
+            <td>
+            <ul style="list-style-type: none;">
+                <li><h3>Let us help you</h3></li>
+                <li><a href="#">Your account</a></li>
+                <li><a href="#">Returns center</a></li>
+                <li><a href="#">Recalls and product safety alerts</a></li>
+                <li><a href="#">100% purchase protection</a></li>
+                <li><a href="#">Amazon app download</a></li>
+                <li><a href="#">Help</a></li>
+            </ul></td>
+
+        </tr>
+    </table>
+    <hr width="100%" color="grey" size="2"> <br>
+</div>
+    <div class="t1">
+    <table  cellpadding="30" >
+        <tr>
+        <td><ul>
+            <li><a href="#"><b>AbeBooks</b><br>Books, art <br>&collectibles</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>Amazon Web Series</b><br>Scalable cloud<br>Computing services</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>Audible</b><br>Download  <br>Audio books</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>IMDB</b><br>Movies, TV<br>& Celebrities</a></li></ul>
+        </td>
+
+    </tr>
+        <tr>
+        <td><ul>
+            <li><a href="#"><b>Shopbop</b><br>Designer <br>Fashion Brands</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>Amazon Business</b><br>Everything for <br>your business</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>Prime now</b><br>2-hour delivery <br>on Everyday items</a></li></ul>
+        </td>
+        <td><ul>
+            <li><a href="#"><b>Amazon Prime Music</b><br>100 million songs ad-<br>free <br>over 15 million podcast episodes</a></li></ul>
+        </td>
+
+    </tr>
+    </table>
+    <hr width="100%" color="grey" size="2"> <br> 
+    
+    <div class="last" style="text-align: center; ">
+        <ul style="list-style-type: none;"><li><a href="#" style="color: white;">Conditions of Use & Sale 
+            Privacy Notice
+            Interest-Based Ads</a></li>
+        <li><a href="#" style="color: white;">© 1996-2025, Amazon.com, Inc. or its affiliates</a></li></ul>
+    </div> <br>
+</div> 
+
+
+</footer> 
 </body>
 </html>
